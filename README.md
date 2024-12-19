@@ -17,3 +17,9 @@ conda env create -f environment.yml
 There are two notebooks in the project:
 1. `dataset_creation.ipynb`: This notebook contains the code for creating the dataset. It uses the Crossref API to get the published papers for the preprints in the dataset.	
 2. `Model Creation`: This notebook contains the code for the computational pipeline. It uses the dataset created in the previous notebook to train the model and evaluate it.
+
+# Instructions:
+1. Run the `dataset_creation.ipynb` notebook to create the dataset.
+- While running please make sure that you connect to the EPFL VPN or network and have a Scopus API key. The Scopus API key is required to get the abstracts of the papers from Scopus. The key should be stored in a file called `scopus_key.txt` in the root directory of the project. Running the whole document you should the recreation of the dataset. The Mini Dataset is already included by default. 
+2. Run the `Model Creation` notebook to train the model and evaluate it.
+- By Running the Model Creation notebook you should be able to see the results of the model and the evaluation of the model.
